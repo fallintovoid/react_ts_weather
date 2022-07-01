@@ -8,6 +8,7 @@ const useRequest = () => {
                 throw new Error(`Could not fetch ${url}, status ${response.status}`)
             }
             const data = await response.json();
+            setLoading(false)
             return(data)
         }
         catch(e) {
