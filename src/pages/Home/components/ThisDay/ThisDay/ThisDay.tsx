@@ -1,10 +1,10 @@
 import React from 'react'
-import GlobalSvgSelector from '../../../../images/GlobalSvgSelector'
+import GlobalSvgSelector from '../../../../../images/GlobalSvgSelector'
 import s from './ThisDay.module.scss'
 
 type Props = {}
 
-const ThisDay = (props: Props) => {
+const ThisDay: React.FC = () => {
   return (
     <div className={s.this_day}>
         <div className={s.temp_and_icon}>

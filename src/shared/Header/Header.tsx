@@ -6,7 +6,7 @@ import s from './Header.module.scss'
 const Header = () => {
   return (
     <>
-        <Navbar bg="white" variant="dark">
+        <Navbar bg="#0D1117" variant="dark">
             <Container>
                 <Navbar.Brand href="#home">
                     <GlobalSvgSelector id={`header-logo`}/>

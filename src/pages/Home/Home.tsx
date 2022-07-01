@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
-import ThisDay from './components/ThisDay/ThisDay'
+import ThisDay from './components/ThisDay/ThisDay/ThisDay'
 import useWeatherApi from '../../services/useWeatherApi';
+import { WeatherInfo } from './components/WeatherInfo';
+
+import s from './Home.module.scss';
 
 const Home: React.FC = () => {
   const {getCurrentWeather} = useWeatherApi()
@@ -9,8 +12,9 @@ const Home: React.FC = () => {
       console.log(getCurrentWeather())
   }, [])
   return (
-    <div>
+    <div className={s.thisday}>
         <ThisDay/>
+        <WeatherInfo />
     </div>
   )
 }

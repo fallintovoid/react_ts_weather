@@ -1,0 +1,16 @@
+@mixin square($value, $units) {
+    width: #{$value}#{$units};
+    height: #{$value}#{$units};
+}
+
+@mixin radius($radio) {
+    border-radius: #{$radio};
+}
+
+@mixin bgc-img($x, $y, $url) {
+    background-image: url(#{$url});
+
+    background-repeat: no-repeat;
+
+    background-position: #{$x} #{$y};
+}
