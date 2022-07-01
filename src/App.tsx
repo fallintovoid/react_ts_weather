@@ -3,7 +3,7 @@ import Home from './pages/Home/Home';
 import './styles/index.scss'
 import Header from './shared/Header/Header';
 
-function App() {
+const App: React.FC = () => {
     return (
       <div className="container">
           <Header/>
