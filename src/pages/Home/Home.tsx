@@ -5,7 +5,7 @@ import useWeatherApi from '../../services/useWeatherApi';
 type Props = {}
 
 const Home = () => {
-  const {getCurrentWeather} = useWeatherApi()
+  const {getCurrentWeather, loading, error} = useWeatherApi();
   
   useEffect(() => {
       console.log(getCurrentWeather())
