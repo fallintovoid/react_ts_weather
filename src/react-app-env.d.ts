@@ -8,7 +8,6 @@ type Weather = {
 };
 
 interface Weather_data {
-    weatherData: {
-        weather: Weather[]
-    }
+    weather: Weather[],
+    name: string
 }
